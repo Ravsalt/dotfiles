@@ -1,0 +1,114 @@
+* {
+    active-background: #89b4fa;
+    active-foreground: #1e1e2e;
+    normal-background: #1e1e2e;
+    normal-foreground: #cdd6f4;
+    urgent-background: #f38ba8;
+    urgent-foreground: #1e1e2e;
+    background-color: rgba(17, 17, 27, 0.9);
+    border-color: #89b4fa;
+    selected-normal-background: #1e1e2e;
+    selected-normal-foreground: #89b4fa;
+    selected-urgent-background: #f38ba8;
+    selected-urgent-foreground: #1e1e2e;
+    selected-active-background: #89b4fa;
+    selected-active-foreground: #1e1e2e;
+    background-color: rgba(17, 17, 27, 0.9);
+    background: transparent;
+    spacing: 0;
+}
+
+#window {
+    background-color: rgba(17, 17, 27, 0.9);
+    border: 2px solid #89b4fa;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#mainbox {
+    border: 0;
+    padding: 0;
+}
+
+#input {
+    background-color: #1e1e2e;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+    color: #cdd6f4;
+    margin: 0 0 10px 0;
+    padding: 8px 12px;
+}
+
+#entry {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+#entry:selected {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}
+
+#text {
+    color: #cdd6f4;
+}
+
+#text:selected {
+    color: #1e1e2e;
+}
+
+#listview {
+    border: 0;
+    padding: 0;
+    margin: 4px 0 0 0;
+}
+
+#element {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+#element.normal.normal {
+    color: #cdd6f4;
+    background-color: transparent;
+}
+
+#element.normal.urgent {
+    color: #f38ba8;
+    background-color: transparent;
+}
+
+#element.normal.active {
+    color: #89b4fa;
+    background-color: transparent;
+}
+
+#element.selected.normal {
+    color: #1e1e2e;
+    background-color: #89b4fa;
+}
+
+#element.selected.urgent {
+    color: #1e1e2e;
+    background-color: #f38ba8;
+}
+
+#element.selected.active {
+    color: #1e1e2e;
+    background-color: #89b4fa;
+}
+
+#element.alternate.normal {
+    color: #cdd6f4;
+    background-color: transparent;
+}
+
+#element.alternate.urgent {
+    color: #f38ba8;
+    background-color: transparent;
+}
+
+#element.alternate.active {
+    color: #89b4fa;
+    background-color: transparent;
+}
