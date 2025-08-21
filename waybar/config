@@ -30,7 +30,9 @@
   },
 
   "clock": {
-    "format": "󰥔 {:%H:%M}",
+    "timezone": "Asia/Manila",
+    "12hour": true,
+    "format": "󰥔 {:%I:%M %p}",
     "tooltip-format": "{:%A %d %B %Y}"
   },
 
