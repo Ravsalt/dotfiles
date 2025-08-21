@@ -1,6 +1,17 @@
 # My Dotfiles
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository contains my personal dotfiles for various applications on Linux.
+
+## Table of Contents
+
+*   [What are dotfiles?](#what-are-dotfiles)
+*   [Applications](#applications)
+*   [Installation](#installation)
+*   [Usage](#usage)
+*   [Contributing](#contributing)
+*   [License](#license)
 
 ## What are dotfiles?
 
@@ -45,8 +56,20 @@ The script will create symbolic links for all the dotfiles in this repository to
 
 **Warning:** This script will overwrite your existing configuration. Make sure to review the script and back up your existing dotfiles before proceeding.
 
-## Directory Structure
+## Usage
 
-The directory structure of this repository is straightforward. Each application has its own directory, and the configuration files for that application are located inside that directory.
+After installing the dotfiles, you may need to restart your applications for the changes to take effect.
 
-For example, the configuration for `kitty` is located in the `kitty/` directory.
+For example, to apply the new `.bashrc` configuration, you can either restart your terminal or run the following command:
+
+```bash
+source ~/.bashrc
+```
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
