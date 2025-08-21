@@ -21,15 +21,29 @@ This repository contains configuration for the following applications:
 
 ## Installation
 
-To install these dotfiles, you can clone this repository and then create symbolic links from your home directory to the files in this repository.
+To install these dotfiles, you can use the provided `install.sh` script.
 
-For example, to install the `.bashrc` file, you would run the following command:
+1.  Clone this repository to your local machine:
 
-```bash
-ln -s /path/to/this/repository/.bashrc ~/.bashrc
-```
+    ```bash
+    git clone https://github.com/Ravsalt/dotfiles.git
+    ```
 
-**Warning:** Installing these dotfiles will overwrite your existing configuration. Make sure to back up your existing dotfiles before proceeding.
+2.  Navigate to the cloned repository:
+
+    ```bash
+    cd dotfiles
+    ```
+
+3.  Run the `install.sh` script:
+
+    ```bash
+    ./install.sh
+    ```
+
+The script will create symbolic links for all the dotfiles in this repository to your home directory. It will also back up any existing dotfiles by renaming them with a `.bak` extension.
+
+**Warning:** This script will overwrite your existing configuration. Make sure to review the script and back up your existing dotfiles before proceeding.
 
 ## Directory Structure
 
