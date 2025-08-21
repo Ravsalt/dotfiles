@@ -1,0 +1,51 @@
+[global]
+    # Geometry & Position
+    geometry = "300x70-10+50"     # width x height - x offset + y offset
+    origin = "top-right"
+    offset = 10
+    padding = 12
+    separator_height = 2
+    frame_width = 2
+    corner_radius = 8
+    horizontal_alignment = right
+    vertical_alignment = top
+    shrink = true
+    transparency = 8             # 0-31, lower = more transparent
+
+    # Fonts
+    font = Cantarell 10
+    format = "%s %b"             # shows icon + message
+
+    # Icon / Emoji support
+    icon_position = left
+    markup = yes
+
+[urgency_low]
+    background = "#222222"
+    foreground = "#aaaaaa"
+    frame_color = "#444444"
+    timeout = 3
+
+[urgency_normal]
+    background = "#2e3440"
+    foreground = "#d8dee9"
+    frame_color = "#4c566a"
+    timeout = 5
+
+[urgency_critical]
+    background = "#bf616a"
+    foreground = "#eceff4"
+    frame_color = "#d08770"
+    timeout = 0      # stays until dismissed
+    underline = "#ff5555"
+
+[mouse]
+    # optional: click to close
+    middle = close
+    right = close
+
+[format]
+    # use emoji/icon for severity
+    low = "💬 %s"
+    normal = "🔔 %s"
+    critical = "⚠️ %s"

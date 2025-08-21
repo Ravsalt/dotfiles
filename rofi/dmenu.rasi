@@ -1,0 +1,150 @@
+/**
+ * Clean Rofi dmenu theme
+ * Minimal & Fast
+ */
+
+* {
+    font: "JetBrainsMono Nerd Font 11";
+    background-color: transparent;
+    text-color: #cdd6f4;
+    border-color: #74c7ec;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    anchor: north;
+    location: north;
+    width: 35%;
+    y-offset: 8px;
+    background-color: rgba(30, 30, 46, 0.95);
+    border: 2px solid #74c7ec;
+    border-radius: 12px;
+    padding: 12px;
+    backdrop-filter: blur(10px);
+}
+
+inputbar {
+    children: [prompt, entry];
+    spacing: 8px;
+    padding: 8px 12px;
+    background-color: rgba(49, 50, 68, 0.8);
+    border-radius: 8px;
+    margin: 0 0 8px 0;
+}
+
+prompt {
+    text-color: #74c7ec;
+    font-weight: bold;
+    padding: 0;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: #6c7086;
+    text-color: #cdd6f4;
+    cursor: text;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: false;
+}
+
+element {
+    orientation: horizontal;
+    children: [element-text];
+    padding: 8px 12px;
+    spacing: 8px;
+    border-radius: 6px;
+    background-color: transparent;
+    text-color: #cdd6f4;
+    margin: 1px 0;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #cdd6f4;
+}
+
+element normal.urgent {
+    background-color: rgba(243, 139, 168, 0.1);
+    text-color: #f38ba8;
+    border: 1px solid rgba(243, 139, 168, 0.3);
+}
+
+element normal.active {
+    background-color: rgba(166, 227, 161, 0.1);
+    text-color: #a6e3a1;
+    border: 1px solid rgba(166, 227, 161, 0.3);
+}
+
+element selected.normal {
+    background-color: #74c7ec;
+    text-color: #1e1e2e;
+    font-weight: bold;
+}
+
+element selected.urgent {
+    background-color: #f38ba8;
+    text-color: #1e1e2e;
+    font-weight: bold;
+}
+
+element selected.active {
+    background-color: #a6e3a1;
+    text-color: #1e1e2e;
+    font-weight: bold;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: #cdd6f4;
+}
+
+element alternate.urgent {
+    background-color: rgba(243, 139, 168, 0.05);
+    text-color: #f38ba8;
+}
+
+element alternate.active {
+    background-color: rgba(166, 227, 161, 0.05);
+    text-color: #a6e3a1;
+}
+
+element-text {
+    background-color: transparent;
+    cursor: inherit;
+    highlight: inherit;
+    text-color: inherit;
+}
+
+/* Scrollbar */
+scrollbar {
+    width: 4px;
+    border: 0;
+    handle-color: #74c7ec;
+    handle-width: 4px;
+    padding: 0;
+    margin: 0 0 0 4px;
+}
+
+/* Message box */
+message {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgba(49, 50, 68, 0.8);
+    margin: 0 0 8px 0;
+}
+
+textbox {
+    text-color: #cdd6f4;
+    background-color: transparent;
+}
